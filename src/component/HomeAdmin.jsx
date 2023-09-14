@@ -49,27 +49,27 @@ useEffect(() => {
   }, [reload]);
   return (
     <>
-    <div>
-     <input onChange={(e)=> {setName(e.target.value)}} type="text" placeholder="name"/>
-     <input onChange={(e)=> {setLastname(e.target.value)}} type="text" placeholder="lastname"/>
-     <input onChange={(e)=> {setPosition(e.target.value)}} type="text" placeholder="Position"/>
-     <button onClick={()=> {creatUserhere(name,lastname,position)}} > save</button>
+    <div className='flex justify-center pt-10 '>
+     <input className="mx-4 rounded bg-red-100 px-10" onChange={(e)=> {setName(e.target.value)}} type="text" placeholder="name"/>
+     <input className="mx-4 rounded bg-red-100 px-10" className="mx-4 rounded bg-red-100 px-10" onChange={(e)=> {setLastname(e.target.value)}} type="text" placeholder="lastname"/>
+     <input className="mx-4 rounded bg-red-100 px-10" onChange={(e)=> {setPosition(e.target.value)}} type="text" placeholder="Position"/>
+     <button className="mx-4 rounded bg-red-100 px-10" onClick={()=> {creatUserhere(name,lastname,position)}} className="mx-4 rounded bg-red-300 px-10"> save</button>
      
      </div>
 
-     <div>
-      <table>
-      <thead>
-        <th>Name</th>
-         <th>Lastname</th>
-         <th>Postition</th>
-         <th>Action</th>
+     <div  className='flex justify-center pt-10 '>
+      <table >
+      <thead >
+        <th className="mx-4 rounded bg-red-100 px-10" >Name</th>
+         <th className="mx-4 rounded bg-red-100 px-10" >Lastname</th>
+         <th className="mx-4 rounded bg-red-100 px-10" >Postition</th>
+         <th className="mx-4 rounded bg-red-100 px-10" >Action</th>
 
       </thead>
          
-         <tbody>
+         <tbody >
          {dataform.map((item) => (
-                <tr key={item.id}>
+                <tr className="mx-4 rounded bg-red-100 px-10"  key={item.id}>
                   <td>{item.name}</td>
                   <td>{item.lastname}</td>
                   <td>{item.position}</td>
