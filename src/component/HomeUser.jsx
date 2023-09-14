@@ -16,19 +16,19 @@ const HomeUser = () => {
   }, []);
   return (
     <>
-    <div>
-     <input type="text" placeholder="name"/>
-     <input type="text" placeholder="lastname"/>
-     <input type="text" placeholder="Position"/>
-     <button>save</button>
+    <div className='flex justify-center pt-10 '>
+     <input className="mx-4 rounded bg-red-100 px-10" type="text" placeholder="name"/>
+     <input className="mx-4 rounded bg-red-100 px-10" type="text" placeholder="lastname"/>
+     <input className="mx-4 rounded bg-red-100 px-10" type="text" placeholder="Position"/>
+     <button className="mx-4 rounded bg-red-300 px-10" >save</button>
      </div>
 
-     <div>
+     <div className='flex justify-center pt-6'>
       <table>
       <thead>
-        <th>Name</th>
-         <th>Lastname</th>
-         <th>Postition</th>
+        <th className="mx-12 rounded bg-red-100 px-10">Name</th>
+         <th className="mx-12 rounded bg-red-100 px-10">Lastname</th>
+         <th className="mx-12 rounded bg-red-100 px-10">Postition</th>
       </thead>
          
          <tbody>

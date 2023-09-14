@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar';
 const Owner = () => {
   return (
-    <>
+    <div className='bg-red-200 min-h-screen' >
     <Navbar/>
         
       <div>
@@ -13,7 +13,7 @@ const Owner = () => {
            <p> I'm Strugging whit this!!! </p>
        </div>
       
-    </>
+    </div>
 )
 };
 

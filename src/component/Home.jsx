@@ -41,21 +41,22 @@ const HandleAdmin = () => {
 }
 
   return (
-    <>
+    <div 
+    className="bg-red-200 min-h-screen">
       <Navbar/>
-        <h1>Generation Thailand </h1>
+        <h1 className="text-center pt-20 text-4xl">Generation Thailand </h1>
         <div> 
-          <h1>{change}</h1>
+          <h1 className="text-center pt-20 text-4xl">{change}</h1>
         </div>
-        <div>
-          <button onClick={Handleuser}>UserHome Secter</button>
-          <button onClick={HandleAdmin}>AdminHome Secter</button>
+        <div className="h-12 border flex iten-center justify-center mt-6">
+          <button className="mx-10 rounded bg-red-500 px-10 " onClick={Handleuser}>UserHome Secter</button>
+          <button className="mx-10 rounded bg-green-500 px-10 " onClick={HandleAdmin}>AdminHome Secter</button>
         </div>
         <div>
           {show}
         </div>
         
-    </>
+    </div>
     
   )
 }
